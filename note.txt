@@ -1,0 +1,55 @@
+create_table()
+# # create and endpoint to set database name
+# @app.route('/create/database', methods=['GET'])
+# def createDb():
+#     conn = get_connection()
+#     cursor = conn.cursor()
+#     createdb = """CREATE DATABASE `fileautos`"""
+#     cursor.execute(createdb)
+#     conn.commit()
+#     conn.close()
+#     return "database created"
+
+# # endpoint for tables model
+# @app.route('/create/table', methods=['GET'])
+# def createtab():
+#     usedab = f"""USE `fileautos`"""
+#     createtab = f"""CREATE TABLE IF NOT EXISTS `blogusers`(
+#     `userid` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+#     `username` VARCHAR(50) NOT NULL,
+#     `email` VARCHAR(100) NOT NULL
+#     );"""
+#     cursor.execute(usedab)
+#     cursor.execute(createtab)
+#     connection.commit()
+#     connection.close()
+#     return "table created successfully"
+
+# # drop database route
+# @app.route('/drop/database', methods=['GET'])
+# def dropDb():
+#     dropdata = """DROP DATABASE `fileautos`"""
+#     cursor.execute(dropdata)
+#     connection.commit()
+#     connection.close()
+#     return "database dropped"
+
+# # create a simple endpoint to welcome users
+# @app.route('/', methods=['GET'])
+# def welcome():
+#     return "please navigate the endpoint"
+
+
+# @app.route('/api/home', methods=['GET', 'POST'])
+# def homepage():
+#     return "Welcome to the home page where users data are collated via form filling"
+
+
+# @app.route('/api/createuser', methods=['GET', 'POST'])
+# def createuser():
+#     data = request.get_json()
+#     newuser = {
+#         "username":data.get("username"),
+#         "email": data.get("email")
+#     }
+#     return "new user registered"
